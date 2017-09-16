@@ -35,14 +35,14 @@ else if (cart.length === 1){
   console.log(`In your cart, you have ${name} at $${cart[0][name]}.`)
 }
 
-else if (cart.length > 1){
-  var keys = Object.keys(cart);
-  for (var i = 0; i < keys.length; i++){
-    var strArr = [];
-    strArr.push(`In your cart, you have ${keys[i]} at $${cart[keys][i]} and`)
-  }
-return strArr;
-}
+// else if (cart.length > 1){
+//   var keys = Object.keys(cart);
+//   for (var i = 0; i < keys.length; i++){
+//     var strArr = [];
+//     strArr.push(`In your cart, you have ${keys[i]} at $${cart[keys][i]} and`)
+//   }
+// return strArr;
+// }
 }
 
 function total() {
