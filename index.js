@@ -9,12 +9,37 @@ function setCart(c) {
   return cart;
 }
 
+function getPrice(){
+  var price = Math.random() * 10;
+  if (price < 1){
+    price = 1;
+  }
+  return price = Math.floor(price);
+}
+
 function addToCart(item) {
- // write your code here
+  var money = getPrice();
+ cart.push({[item]: money});
+ var consoleRet = `${item} has been added to your cart.`;
+ console.log(consoleRet);
+ return cart;
 }
 
 function viewCart() {
-  // write your code here
+if (cart.length === 0){
+  console.log("Your shopping cart is empty.");
+}
+
+else if (cart.length === 1){
+  var name = Object.keys(cart[0]);
+  console.log(`In your cart, you have ${name} at $${cart[0][name]}.`)
+}
+
+else if (cart.length > 1){
+  var keys = Object.keys(cart);
+  console.log(keys);
+
+}
 }
 
 function total() {
