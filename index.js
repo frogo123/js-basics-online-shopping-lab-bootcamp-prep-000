@@ -37,11 +37,11 @@ else if (cart.length === 1){
 
 else if (cart.length > 1){
   var keys = Object.keys(cart[0]);
-  for (var i = 0; i < keys.length; i++){
-    var strArr = [];
-    strArr.push(`In your cart, you have ${keys[i]} at $${cart[keys][i]} and`)
-  }
-  
+  // for (var i = 0; i < keys.length; i++){
+  //   var strArr = [];
+  //   strArr.push(`In your cart, you have ${keys[i]} at $${cart[keys][i]} and`)
+  // }
+
 return strArr;
 }
 }
