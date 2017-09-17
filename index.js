@@ -44,10 +44,15 @@ else if (cart.length > 1){
  keys.push(Object.keys(cart[j]));
 }
   for (var i = 0; i < keys.length; i++){
-    strArr.push(`In your cart, you have ${keys[i]} at $${cart[i][keys[i]]} and`)
+    if (i === 0)
+    strArr.push(`In your cart, you have ${keys[i]} at $${cart[i][keys[i]]},`)
+  )
+  else if (i != keys.length -1){
+    strArr.push(`and ${keys[i]} at $${cart[i][keys[i]]}.`)
   }
-
-console.log(strArr);
+  }
+var string = strArr.join();
+console.log(string);
 }
 }
 
