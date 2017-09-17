@@ -42,7 +42,7 @@ else if (cart.length > 1){
   //   strArr.push(`In your cart, you have ${keys[i]} at $${cart[keys][i]} and`)
   // }
 
-return keys;
+console.log(keys);
 }
 }
 
