@@ -1,4 +1,6 @@
 var cart = [];
+var strArr = [];
+var keys = [];
 
 function getCart() {
  return cart;
@@ -37,11 +39,12 @@ else if (cart.length === 1){
 }
 
 else if (cart.length > 1){
+  keys = [];
   for (var j = 0; j<cart.length; j++){
  keys.push(Object.keys(cart[j]));
 }
   for (var i = 0; i < keys.length; i++){
-    var strArr = [];
+     strArr = [];
     strArr.push(`In your cart, you have ${keys[i]} at $${cart[keys][i]} and`)
   }
 
